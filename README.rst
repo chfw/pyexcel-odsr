@@ -94,15 +94,8 @@ As a standalone library
 
     >>> import os
     >>> import sys
-    >>> if sys.version_info[0] < 3:
-    ...     from StringIO import StringIO
-    ... else:
-    ...     from io import BytesIO as StringIO
-    >>> PY2 = sys.version_info[0] == 2
-    >>> if PY2 and sys.version_info[1] < 7:
-    ...      from ordereddict import OrderedDict
-    ... else:
-    ...     from collections import OrderedDict
+    >>> from io import BytesIO as StringIO
+    >>> from collections import OrderedDict
 
 
 .. testcode::
